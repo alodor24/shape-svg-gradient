@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Haciendo ondas con SVG</title>
+    </head>
+
+    <body>
+        <div class="containerShapeTop">
+            <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet">
+                <defs>
+                    <linearGradient id="grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <path d="M0,50 L0,4 C95,-23 285,115 500,2 L500,50 L0,50 Z" style="stroke: none; fill: url(#grad-1);"></path>
+            </svg>
+        </div>
+
+        <section></section>
+
+        <div class="containerShapeBottom">
+            <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet">
+                <defs>
+                    <linearGradient id="grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <path d="M0,50 L0,4 C95,-23 285,115 500,2 L500,50 L0,50 Z" style="stroke: none; fill: url(#grad-2);"></path>
+            </svg>
+        </div>
+    </body>
+</html>
